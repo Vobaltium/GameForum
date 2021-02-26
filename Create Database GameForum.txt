@@ -1,0 +1,54 @@
+create table g_games
+(
+    g_name        varchar
+        constraint g_games_pk
+            primary key,
+    g_releaseDate Date,
+    g_genre       varchar,
+    g_multiplayer boolean
+);
+
+create table p_players
+(
+    p_id   int
+        constraint p_players_pk
+            primary key,
+    p_name varchar
+);
+
+create table pg_playersPlayGames
+(
+    pg_g_name  varchar
+        references g_games,
+    pg_p_id    int
+        references p_players,
+    pg_message varchar,
+    constraint pg_pk
+        primary key (pg_g_name, pg_p_id)
+);
+
+create table q_questions
+(
+    q_id      int
+        constraint q_questions_pk
+            primary key,
+    q_message varchar not null,
+    q_p_id    id      not null
+        references p_players,
+    q_g_name  varchar
+        references g_games
+        references g_games
+);
+
+create table a_answers
+(
+    a_id      int
+        constraint a_answers_pk
+            primary key,
+    a_message varchar not null,
+    a_p_id    int
+        references p_players,
+    a_q_id    int
+        references q_questions
+);
+
