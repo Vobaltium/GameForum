@@ -1,0 +1,39 @@
+﻿@model GameForum_Washüttl.DomainModel.Models.Game
+
+@{
+    ViewData["Title"] = "Edit the game";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <p>Edit certain attributes of this game.</p>
+        <form asp-action="EditGame">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="g_genre" class="control-label">Genre:</label>
+                <input asp-for="g_genre" class="form-control" />
+                <span asp-validation-for="g_genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="g_multiplayer" class="control-label">Multiplayer:</label>
+                <input asp-for="g_multiplayer" class="form-control" />
+                <span asp-validation-for="g_multiplayer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label">Release Date:</label>
+                <input asp-for="ReleaseDate" class="form-control" type="date" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="g_imageLink" class="control-label">Image Link:</label>
+                <input asp-for="g_imageLink" class="form-control"/>
+                <span asp-validation-for="g_imageLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save Changes" class="btn btn-primary" />
+            </div>
+        </form>
+        <a asp-action="Index">Back to the games.</a>
+    </div>
+</div>

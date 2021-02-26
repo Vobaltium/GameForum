@@ -1,0 +1,24 @@
+﻿@model GameForum_Washüttl.DomainModel.Models.PlayersPlayGames
+
+@{
+    ViewData["Title"] = "Edit the request";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <p>Write him/her what and how you want to play.</p>
+        <form asp-action="EditRequest">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="pg_message" class="control-label">Message:</label>
+                <input asp-for="pg_message" class="form-control" />
+                <span asp-validation-for="pg_message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save Changes" class="btn btn-primary" />
+            </div>
+        </form>
+        <a asp-action="Index">Back to the requests.</a>
+    </div>
+</div>

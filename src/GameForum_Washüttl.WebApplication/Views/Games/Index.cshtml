@@ -1,0 +1,44 @@
+﻿@model IEnumerable<GameForum_Washüttl.DomainModel.Models.Game>
+
+@{
+    ViewData["Title"] = "Games";
+}
+<h1>@ViewData["Title"]</h1>
+<p>Here you can see all of our current games.</p>
+<a asp-action="Create">Add a not in our library existing game.</a>
+<br /><br />
+
+<form asp-action="Index">
+    <div>
+        <label for="id">Search:</label>
+        <input type="text" name="id"/>
+        <input type="Submit" value="Search Games"/>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Multiplayer</th>
+            <th>Release Date</th>
+            <th>Game Cover</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    @foreach (var game in Model)
+    {
+        <tr>
+            <td>@game.g_name</td>
+            <td>@game.g_genre</td>
+            <td>@Html.DisplayFor(modelItem => game.g_multiplayer)</td>
+            <td>@game.ReleaseDate.ToShortDateString()</td>
+            <td><img src="@game.g_imageLink" width="90" height="100" /></td>
+            <td>
+                <a asp-action="EditGame" asp-route-id="@game.g_name">Edit</a> |
+                <a asp-action="DeleteGame" asp-route-id="@game.g_name">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

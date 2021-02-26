@@ -1,0 +1,71 @@
+﻿@model IEnumerable<GameForum_Washüttl.DomainModel.Models.Player>
+
+@{
+    ViewData["Title"] = "Find Players";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Here you can you find Players that you can play with.</p>
+<a asp-action="AddRequest">Create own request.</a>
+<br /><br />
+
+<form asp-action="Index">
+    <div>
+        <label for="id">Search:</label>
+        <input type="text" name="id"/>
+        <input type="Submit" value="Search Players or Games" />
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Player</th>
+            <th>Message</th>
+            <th>Actions</th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var player in Model)
+    {
+        <tr>
+            <th>@Html.DisplayFor(modelItem => player.p_name)</th>
+        </tr>
+        @foreach (var game in player.players_play_games)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => game.pg_g_name)</td>
+                <td>@Html.DisplayFor(modelItem => game.pg_message)</td>
+                <td>
+                    <a asp-action="EditRequest" asp-route-id="@game.pg_p_name#@game.pg_g_name">Edit</a> |
+                    <a asp-action="DeleteRequest" asp-route-id="@game.pg_p_name#@game.pg_g_name">Delete</a> |
+                    <a asp-action="AddAnswer" asp-route-id="@game.pg_p_name#@game.pg_g_name">Play</a>
+                </td>
+                <td></td>
+            </tr>
+            @if (player.answers_receiver.Count > 0)
+            {
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Sender</th>
+                        <th>Message</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+            }
+            @foreach (var answer in player.answers_receiver)
+            {
+                <tr>
+                    <td></td>
+                    <td>@Html.DisplayFor(modelItem => answer.a_p_sender)</td>
+                    <td>@Html.DisplayFor(modelItem => answer.a_message)</td>
+                    <td>
+                        <a asp-action="EditAnswer" asp-route-id="@answer.a_p_sender#@answer.a_p_receiver#@answer.a_g_game">Edit</a> |
+                        <a asp-action="DeleteAnswer" asp-route-id="@answer.a_p_sender#@answer.a_p_receiver#@answer.a_g_game">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    }
+</table>
