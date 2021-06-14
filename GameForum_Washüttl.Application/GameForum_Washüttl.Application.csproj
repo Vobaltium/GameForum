@@ -8,4 +8,8 @@
     <ProjectReference Include="..\src\GameForum_Washüttl.DomainModel\GameForum_Washüttl.DomainModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="GameForum_Washüttl.Application.Test.csproj" />
+  </ItemGroup>
+
 </Project>
