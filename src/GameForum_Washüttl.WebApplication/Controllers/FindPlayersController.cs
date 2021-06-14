@@ -3,10 +3,8 @@ using GameForum_Washüttl.DomainModel.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using GameForum_Washüttl.DomainModel.Exceptions;
 
 namespace GameForum_Washüttl.WebApplication.Controllers
 {
@@ -27,7 +25,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             if (!string.IsNullOrEmpty(id))
                 context = await findPlayersService.GetAllWithSearch(id);
             else
-                context = await findPlayersService.GetAll();
+                context = await findPlayersService.GetAllAsync();
 
             return View(context);
         }

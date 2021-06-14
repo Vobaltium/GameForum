@@ -6,7 +6,7 @@ namespace GameForum_Washüttl.DomainModel.Interfaces
 {
     public interface IFindPlayersService
     {
-        Task<IEnumerable<Player>> GetAll();
+        Task<IEnumerable<Player>> GetAllAsync();
         Task<IEnumerable<Player>> GetAllWithSearch(string searchString);
 
         Task UpdateRequest(PlayersPlayGames entity);

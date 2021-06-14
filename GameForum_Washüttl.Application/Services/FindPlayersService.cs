@@ -140,7 +140,7 @@ namespace GameForum_Washüttl.Application.Services
                 throw new ServiceException("Datensatz konnte nicht gefunden werden!");
         }
 
-        public async Task<IEnumerable<Player>> GetAll()
+        public async Task<IEnumerable<Player>> GetAllAsync()
         {
             return await DBContext.Players.Where(o => DBContext.PlayersPlayGames.Where(l => l.pg_p_name == o.p_name).Count() > 0)
                                             .Include(o => o.answers_receiver)
@@ -151,7 +151,7 @@ namespace GameForum_Washüttl.Application.Services
 
         public async Task<IEnumerable<Player>> GetAllWithSearch(string searchString)
         {
-            IEnumerable<Player> players = await GetAll();
+            IEnumerable<Player> players = await GetAllAsync();
             return players.Where(o => o.p_name.ToLower().Contains(searchString.ToLower()) || 
                                       o.players_play_games.Where(o => o.pg_g_name.ToLower().Contains(searchString.ToLower())).Count() > 0);
         }

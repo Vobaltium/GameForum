@@ -3,7 +3,6 @@ using GameForum_Washüttl.DomainModel.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace GameForum_Washüttl.WebApplication.Controllers
@@ -43,7 +42,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
         public async Task<IActionResult> DeleteGame(string id)
         {
             if(id != null)
-                gamesService.DeleteGame(id);
+                await gamesService.DeleteGame(id);
 
             return RedirectToAction(nameof(Index));
         }
