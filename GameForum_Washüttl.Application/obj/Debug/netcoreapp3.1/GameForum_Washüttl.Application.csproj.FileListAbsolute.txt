@@ -10,3 +10,15 @@ C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\GameForum_Wash
 C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.csproj.CopyComplete
 C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.dll
 C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.pdb
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\bin\Debug\netcoreapp3.1\GameForum_Washüttl.Application.deps.json
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\bin\Debug\netcoreapp3.1\GameForum_Washüttl.Application.dll
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\bin\Debug\netcoreapp3.1\GameForum_Washüttl.Application.pdb
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\bin\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.dll
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\bin\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.pdb
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.csprojAssemblyReference.cache
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.AssemblyInfoInputs.cache
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.AssemblyInfo.cs
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.csproj.CoreCompileInputs.cache
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.csproj.CopyComplete
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.dll
+C:\Users\mcgam\RiderProjects\GameForum\GameForum_Washüttl.Application\obj\Debug\netcoreapp3.1\GameForum_Washüttl.Application.pdb
