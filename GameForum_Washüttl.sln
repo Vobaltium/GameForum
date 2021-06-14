@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.DomainM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.Application", "GameForum_Washüttl.Application\GameForum_Washüttl.Application.csproj", "{F043732F-3CE0-4ED5-A185-12D9E97D3A14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.Application.Test", "GameForum_Washüttl.Application.Test\GameForum_Washüttl.Application.Test.csproj", "{6A08979B-9A96-42B7-BA99-417BF39FAC07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
