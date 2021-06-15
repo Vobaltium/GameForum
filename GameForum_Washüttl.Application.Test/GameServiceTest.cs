@@ -53,5 +53,35 @@ namespace GameForum_Washüttl.Application.Test
             // Assert
             Assert.Equal(count - 1, gamesService.GetAllAsync().Result.Count());
         }
+        
+        [Fact]
+        public void GetAllTest()
+        {
+            // Arrange
+            GameForumDBContext context = TestSeed.Seed();
+            GamesService gamesService = new GamesService(context);
+
+            // Act
+            int count = context.Games.Count();
+            int countGetAll = gamesService.GetAllAsync().Result.Count();
+
+            // Assert
+            Assert.Equal(count, countGetAll);
+        }
+        
+        [Fact]
+        public void GetAllWithSearchTest()
+        {
+            // Arrange
+            GameForumDBContext context = TestSeed.Seed();
+            GamesService gamesService = new GamesService(context);
+            Game game = context.Games.ToList()[0];
+
+            // Act
+            int count = gamesService.GetAllAsyncWithSearch(game.g_name).Result.Count();
+
+            // Assert
+            Assert.Equal(1, count);
+        }
     }
 }

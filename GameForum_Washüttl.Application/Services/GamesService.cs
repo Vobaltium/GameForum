@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using GameForum_Washüttl.DomainModel.Exceptions;
 using GameForum_Washüttl.DomainModel.Interfaces;
@@ -26,7 +27,8 @@ namespace GameForum_Washüttl.Application.Services
         public async Task<IEnumerable<Game>> GetAllAsyncWithSearch(string searchString)
         {
             IEnumerable<Game> games = await GetAllAsync();
-            return games.Where(o => o.g_name.ToLower().Contains(searchString.ToLower()));
+            return games.Where(o => o.g_name.ToLower().Contains(searchString.ToLower()) ||
+                                    o.g_genre.ToLower().Contains(searchString.ToLower()));
         }
 
         public async Task AddGame(Game input)

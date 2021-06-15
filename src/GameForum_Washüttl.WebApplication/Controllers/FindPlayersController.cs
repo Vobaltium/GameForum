@@ -2,7 +2,9 @@
 using GameForum_Washüttl.DomainModel.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -18,14 +20,26 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             this.DBContext = DBContext;
             this.findPlayersService = findPlayersService;
         }
-
-        public async Task<IActionResult> Index(string id)
+        
+        [HttpGet]
+        public async Task<IActionResult> Index(string id, string sortedBy)
         {
             IEnumerable<Player> context = null;
             if (!string.IsNullOrEmpty(id))
                 context = await findPlayersService.GetAllWithSearch(id);
             else
                 context = await findPlayersService.GetAllAsync();
+
+            if (sortedBy != null)
+            {
+                if (sortedBy == "Player")
+                {
+                    List<Player> players;
+                    players = context.ToList();
+                    players.Sort((o,j) => o.p_name.CompareTo(j.p_name));
+                    context = players.AsEnumerable();
+                }
+            }
 
             return View(context);
         }

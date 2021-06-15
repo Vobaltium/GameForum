@@ -9,7 +9,7 @@
 <a asp-action="AddRequest">Create own request.</a>
 <br /><br />
 
-<form asp-action="Index">
+<form asp-action="Index" method="get">
     <div>
         <label for="id">Search:</label>
         <input type="text" name="id"/>
@@ -20,7 +20,12 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Player</th>
+            <th>
+                <form asp-action="Index" method="get">
+                    <input type="hidden" value="Player" name="sortedBy">
+                    <input type="submit" value="Player"/>
+                </form>
+            </th>
             <th>Message</th>
             <th>Actions</th>
             <th></th>

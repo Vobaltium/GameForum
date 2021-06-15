@@ -15,7 +15,6 @@ C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\bin\D
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\bin\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.runtimeconfig.dev.json
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\bin\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.dll
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\bin\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.pdb
-C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.csprojAssemblyReference.cache
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.AssemblyInfoInputs.cache
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.AssemblyInfo.cs
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.csproj.CoreCompileInputs.cache
@@ -34,3 +33,4 @@ C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_
 C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.dll
 C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.pdb
 C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.genruntimeconfig.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.DomainModel\obj\Debug\netcoreapp3.1\GameForum_Washüttl.DomainModel.csproj.AssemblyReference.cache
