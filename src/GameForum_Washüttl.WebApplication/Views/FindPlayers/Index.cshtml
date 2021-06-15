@@ -9,10 +9,11 @@
 <a asp-action="AddRequest">Create own request.</a>
 <br /><br />
 
-<form asp-action="Index" method="get">
+<form asp-action="Index">
     <div>
-        <label for="id">Search:</label>
-        <input type="text" name="id"/>
+        <label for="filter">Search:</label>
+        <input type="text" name="filter" value="@ViewData["CurrentFilter"]"/>
+        <!--<input type="hidden" name="sortedBy" value="@ViewData["sortedBy"]"/>-->
         <input type="Submit" value="Search Players or Games" />
     </div>
 </form>
@@ -21,8 +22,9 @@
     <thead>
         <tr>
             <th>
-                <form asp-action="Index" method="get">
+                <form asp-action="Index">
                     <input type="hidden" value="Player" name="sortedBy">
+                    <input type="hidden" value="@ViewData["CurrentFilter"]" name="filter">
                     <input type="submit" value="Player"/>
                 </form>
             </th>

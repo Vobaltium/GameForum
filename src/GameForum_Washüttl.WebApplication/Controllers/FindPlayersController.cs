@@ -21,12 +21,13 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             this.findPlayersService = findPlayersService;
         }
         
-        [HttpGet]
-        public async Task<IActionResult> Index(string id, string sortedBy)
+        public async Task<IActionResult> Index(string filter, string currentFilter, string sortedBy)
         {
-            IEnumerable<Player> context = null;
-            if (!string.IsNullOrEmpty(id))
-                context = await findPlayersService.GetAllWithSearch(id);
+            IEnumerable<Player> context;
+            ViewData["CurrentFilter"] = currentFilter ?? filter;
+            
+            if (!string.IsNullOrEmpty(filter))
+                context = await findPlayersService.GetAllWithSearch(filter);
             else
                 context = await findPlayersService.GetAllAsync();
 
@@ -34,8 +35,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             {
                 if (sortedBy == "Player")
                 {
-                    List<Player> players;
-                    players = context.ToList();
+                    List<Player> players = context.ToList();
                     players.Sort((o,j) => o.p_name.CompareTo(j.p_name));
                     context = players.AsEnumerable();
                 }

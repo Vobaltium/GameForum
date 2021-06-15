@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GameForum_Washüttl.DomainModel.Models.Game>
+﻿@model GameForum_Washüttl.Application.Services.PagenatedList<GameForum_Washüttl.DomainModel.Models.Game>
 
 @{
     ViewData["Title"] = "Games";
@@ -11,23 +11,45 @@
 <form asp-action="Index">
     <div>
         <label for="id">Search:</label>
-        <input type="text" name="id"/>
+        <input type="text" name="filter"/>
         <input type="Submit" value="Search Games"/>
     </div>
 </form>
 
-<button>View games in paging mode</button>
+<a asp-action="Index" asp-route-pageIndex="@Model.PageIndex + 1"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]">Next</a>
+
+<a asp-action="Index" asp-route-pageIndex="@Model.PageIndex - 1"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]">Prevoius</a>
 
 <table class="table">
     <thead>
-        <tr>
-            <th>Name</th>
-            <th>Genre</th>
-            <th>Multiplayer</th>
-            <th>Release Date</th>
-            <th>Game Cover</th>
-            <th>Actions</th>
-        </tr>
+    <tr>
+        <th>
+            <form asp-action="Index">
+                <input type="hidden" value="Name" name="sortedBy">
+                <input type="hidden" value="@ViewData["CurrentFilter"]" name="filter">
+                <input type="submit" value="Name"/>
+            </form>
+        </th>
+        <th>            
+            <form asp-action="Index">
+                <input type="hidden" value="Genre" name="sortedBy">
+                <input type="hidden" value="@ViewData["CurrentFilter"]" name="filter">
+                <input type="submit" value="Genre"/>
+            </form>
+        </th>
+        <th>Multiplayer</th>
+        <th>            
+            <form asp-action="Index">
+                <input type="hidden" value="ReleaseDate" name="sortedBy">
+                <input type="hidden" value="@ViewData["CurrentFilter"]" name="filter">
+                <input type="submit" value="Release Date"/>
+            </form>
+        </th>        
+        <th>Game Cover</th>
+        <th>Actions</th>
+    </tr>
     </thead>
     @foreach (var game in Model)
     {
