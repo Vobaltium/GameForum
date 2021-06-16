@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 namespace GameForum_Washüttl.Application.Services
 {
-    public class PagenatedList<T> : List<T>
+    public class PaginatedList<T> : List<T>
     {
         public int PageIndex { get; private set; }
 
         public int TotalPages { get; private set; }
 
-        public PagenatedList(List<T> items, int count, int pageIndex, int pageSize)
+        public PaginatedList(List<T> items, int count, int pageIndex, int pageSize)
         {
             PageIndex = pageIndex;
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
@@ -30,7 +30,7 @@ namespace GameForum_Washüttl.Application.Services
             get { return (PageIndex < TotalPages); }
         }
 
-        public static async Task<PagenatedList<T>> CreateAsync(IQueryable<T> source, int pageIndex, int pageSize)
+        public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> source, int pageIndex, int pageSize)
         {
             var count = await source.CountAsync();
 
@@ -39,7 +39,7 @@ namespace GameForum_Washüttl.Application.Services
                 .Take(pageSize)
                 .ToListAsync();
 
-            return new PagenatedList<T>(items, count, pageIndex, pageSize);
+            return new PaginatedList<T>(items, count, pageIndex, pageSize);
         }
     }
 }

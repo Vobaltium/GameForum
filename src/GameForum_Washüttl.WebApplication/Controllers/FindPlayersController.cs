@@ -5,8 +5,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using GameForum_Washüttl.Application.Services;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace GameForum_Washüttl.WebApplication.Controllers
 {
@@ -21,27 +24,41 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             this.findPlayersService = findPlayersService;
         }
         
-        public async Task<IActionResult> Index(string filter, string currentFilter, string sortedBy)
+        public async Task<IActionResult> Index(string filter, string currentFilter, string sortedBy, int pageIndex = 1)
         {
             IEnumerable<Player> context;
             ViewData["CurrentFilter"] = currentFilter ?? filter;
+            ViewData["CurrentSort"] = sortedBy;
             
-            if (!string.IsNullOrEmpty(filter))
-                context = await findPlayersService.GetAllWithSearch(filter);
-            else
-                context = await findPlayersService.GetAllAsync();
+            ViewData["PlayerNameSortParam"] = sortedBy == "Name" ? "NameDesc" : "Name";
 
-            if (sortedBy != null)
+            Expression<Func<Player, bool>> filterPredicate = null;
+            if (!string.IsNullOrEmpty(filter))
             {
-                if (sortedBy == "Player")
-                {
-                    List<Player> players = context.ToList();
-                    players.Sort((o,j) => o.p_name.CompareTo(j.p_name));
-                    context = players.AsEnumerable();
-                }
+                filterPredicate = t => t.p_name.Contains(filter)
+                                       || t.players_play_games.Any(o => o.pg_message.Contains(filter));
+                // Other filters
             }
 
-            return View(context);
+            Func<IQueryable<Player>, IOrderedQueryable<Player>> sortOrderExpression = null;
+            if (!string.IsNullOrEmpty(sortedBy))
+            {
+                sortOrderExpression = sortedBy switch
+                {
+                    "Name" => l => l.OrderBy(s => s.p_name),
+                    "NameDesc" => l => l.OrderByDescending(s => s.p_name)
+                };
+            }
+            
+            IQueryable<Player> result = findPlayersService.GetTable(filterPredicate, sortOrderExpression);
+            result = result
+                .Include(t => t.answers_receiver)
+                .Include(t => t.answers_sender)
+                .Include(t => t.players_play_games);
+
+            PaginatedList<Player> model = await PaginatedList<Player>.CreateAsync(result, pageIndex, 5);
+            
+            return View(model);
         }
 
         public IActionResult AddAnswer(string id)

@@ -1,8 +1,10 @@
-﻿@model IEnumerable<GameForum_Washüttl.DomainModel.Models.Player>
+﻿@model GameForum_Washüttl.Application.Services.PaginatedList<GameForum_Washüttl.DomainModel.Models.Player>
 
 @{
     ViewData["Title"] = "Find Players";
 }
+<link href="https://unpkg.com/tailwindcss/dist/tailwind.css" rel="stylesheet">
+<link href="https://tailwindcss-forms.vercel.app/dist/forms.min.css" rel="stylesheet">
 <h1>@ViewData["Title"]</h1>
 
 <p>Here you can you find Players that you can play with.</p>
@@ -20,18 +22,19 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                <form asp-action="Index">
-                    <input type="hidden" value="Player" name="sortedBy">
-                    <input type="hidden" value="@ViewData["CurrentFilter"]" name="filter">
-                    <input type="submit" value="Player"/>
-                </form>
-            </th>
-            <th>Message</th>
-            <th>Actions</th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            <form asp-action="Index">
+                <input type="hidden" value="@ViewData["PlayerNameSortParam"]" name="sortedBy">
+                <input type="hidden" name="pageIndex" value="@(Model.PageIndex)"/>
+                <input type="hidden" value="@ViewData["CurrentFilter"]" name="filter">
+                <input type="submit" value="Player"/>
+            </form>
+        </th>
+        <th>Message</th>
+        <th>Actions</th>
+        <th></th>
+    </tr>
     </thead>
     @foreach (var player in Model)
     {
@@ -53,12 +56,12 @@
             @if (player.answers_receiver.Count > 0)
             {
                 <thead>
-                    <tr>
-                        <th></th>
-                        <th>Sender</th>
-                        <th>Message</th>
-                        <th>Actions</th>
-                    </tr>
+                <tr>
+                    <th></th>
+                    <th>Sender</th>
+                    <th>Message</th>
+                    <th>Actions</th>
+                </tr>
                 </thead>
             }
             @foreach (var answer in player.answers_receiver)
@@ -76,3 +79,126 @@
         }
     }
 </table>
+
+<table class="min-w-max w-full table-auto">
+    <thead>
+    <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+        <th class="py-3 px-6 text-left">Player</th>
+        <th class="py-3 px-6 text-center">Messages</th>
+        <th class="py-3 px-6 text-center">Actions</th>
+        <th class="py-3 px-6 text-center"></th>
+    </tr>
+    </thead>
+    <tbody class="text-gray-600 text-sm font-light">
+    @foreach (var player in Model)
+    {
+        <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="py-3 px-6 text-left">
+                <div class="flex items-center">
+                    <span>@player.p_name</span>
+                </div>
+            </td>
+            @foreach (var game in player.players_play_games)
+                    {
+                        <tr>
+                                        <!--<td class="py-3 px-6 text-center">
+                                            <span class="bg-purple-200 text-purple-600 py-1 px-3 rounded-full text-xs" th:text="${currentGame.genre}"/>
+                                        </td>-->
+                            <td>@Html.DisplayFor(modelItem => game.pg_g_name)</td>
+                            <td>@Html.DisplayFor(modelItem => game.pg_message)</td>
+                            <td>
+                                <!--<a asp-action="EditRequest" asp-route-id="@game.pg_p_name#@game.pg_g_name">Edit</a> |
+                                <a asp-action="DeleteRequest" asp-route-id="@game.pg_p_name#@game.pg_g_name">Delete</a> |
+                                <a asp-action="AddAnswer" asp-route-id="@game.pg_p_name#@game.pg_g_name">Play</a>-->
+                                
+                                <a asp-action="AddAnswer" asp-route-id="@game.pg_p_name#@game.pg_g_name">
+                                    <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a a asp-action="EditRequest" asp-route-id="@game.pg_p_name#@game.pg_g_name">
+                                    <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a asp-action="DeleteRequest" asp-route-id="@game.pg_p_name#@game.pg_g_name">
+                                    <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        @if (player.answers_receiver.Count > 0)
+                        {
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Sender</th>
+                                <th>Message</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                        }
+                        @foreach (var answer in player.answers_receiver)
+                        {
+                            <tr>
+                                <td></td>
+                                <td>@Html.DisplayFor(modelItem => answer.a_p_sender)</td>
+                                <td>@Html.DisplayFor(modelItem => answer.a_message)</td>
+                                <td>
+                                    <a asp-action="EditAnswer" asp-route-id="@answer.a_p_sender#@answer.a_p_receiver#@answer.a_g_game">Edit</a> |
+                                    <a asp-action="DeleteAnswer" asp-route-id="@answer.a_p_sender#@answer.a_p_receiver#@answer.a_g_game">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+            <!--<td class="py-3 px-6 text-center">
+                <div class="flex item-center justify-center">
+                    <a th:href="'/games/details/' + ${currentGame.name}">
+                        <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a th:href="'/games/edit/' + ${currentGame.name}">
+                        <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a th:href="'/games/delete/' + ${currentGame.name}">
+                        <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </td>-->
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+@{ 
+    string prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    string nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-sortedBy="@ViewData["CurrentSort"]" class="btn btn-primary @prevDisabled">Previous</a>
+
+<a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-sortedBy="@ViewData["CurrentSort"]" class="btn btn-primary @nextDisabled">Next</a>

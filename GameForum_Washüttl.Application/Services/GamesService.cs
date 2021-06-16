@@ -105,5 +105,24 @@ namespace GameForum_Washüttl.Application.Services
             else
                 throw new ServiceException("Datensatz konnte nicht gefunden werden!");
         }
+        
+        public IQueryable<Game> GetTable(
+            Expression<Func<Game, bool>> filterExpression = null, 
+            Func<IQueryable<Game>, IOrderedQueryable<Game>> orderBy = null)
+        {
+            IQueryable<Game> result = DBContext
+                .Set<Game>();
+
+            if (filterExpression != null)
+            {
+                result = result.Where(filterExpression);
+            }
+            if (orderBy != null)
+            {
+                result = orderBy(result);
+            }
+
+            return result;
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using GameForum_Washüttl.DomainModel.Exceptions;
 using System;
+using System.Linq.Expressions;
 
 namespace GameForum_Washüttl.Application.Services
 {
@@ -181,6 +182,25 @@ namespace GameForum_Washüttl.Application.Services
             }
             else
                 throw new ServiceException("Datensatz konnte nicht gefunden werden!");
+        }
+        
+        public IQueryable<Player> GetTable(
+            Expression<Func<Player, bool>> filterExpression = null, 
+            Func<IQueryable<Player>, IOrderedQueryable<Player>> orderBy = null)
+        {
+            IQueryable<Player> result = DBContext
+                .Set<Player>();
+
+            if (filterExpression != null)
+            {
+                result = result.Where(filterExpression);
+            }
+            if (orderBy != null)
+            {
+                result = orderBy(result);
+            }
+
+            return result;
         }
     }
 }

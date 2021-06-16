@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using GameForum_Washüttl.Application.Services;
 using Microsoft.EntityFrameworkCore;
@@ -14,39 +15,49 @@ namespace GameForum_Washüttl.WebApplication.Controllers
     {
         private readonly GameForumDBContext DBContext;
         private readonly IGamesService gamesService;
-        private readonly IReadOnlyService<Game> readOnlyGameService;
 
-        public GamesController(GameForumDBContext DBContext, IGamesService gamesService, IReadOnlyService<Game> readOnlyGameService)
+        public GamesController(GameForumDBContext DBContext, IGamesService gamesService)
         {
             this.DBContext = DBContext;
             this.gamesService = gamesService;
-            this.readOnlyGameService = readOnlyGameService;
         }
 
         public async Task<IActionResult> Index(string filter, string currentFilter, string sortedBy, int pageIndex = 1)
         {
             IEnumerable<Game> context;
             ViewData["CurrentFilter"] = currentFilter ?? filter;
+            ViewData["CurrentSort"] = sortedBy;
             
+            ViewData["NameSortParam"] = sortedBy == "Name" ? "NameDesc" : "Name";
+            ViewData["ReleaseDateSortParam"] = sortedBy == "ReleaseDate" ? "ReleaseDateDesc" : "ReleaseDate";
+            ViewData["GenreSortParam"] = sortedBy == "Genre" ? "GenreDesc" : "Genre";
+            
+            Expression<Func<Game, bool>> filterPredicate = null;
             if (!string.IsNullOrEmpty(filter))
-                context = await gamesService.GetAllAsyncWithSearch(filter);
-            else
-                context = await gamesService.GetAllAsync();
-            
-            List<Game> games = context.ToList();
-            if (sortedBy != null)
             {
-                if (sortedBy == "Name")
-                    games.Sort((o,j) => o.g_name.CompareTo(j.g_name));
-                else if (sortedBy == "Genre")
-                    games.Sort((o,j) => o.g_genre.CompareTo(j.g_genre));
-                else if (sortedBy == "ReleaseDate")
-                    games.Sort((o,j) => o.g_releaseDate.CompareTo(j.g_releaseDate));
+                filterPredicate = t => t.g_name.Contains(filter)
+                                       || t.g_genre.Contains(filter);
+                // Release Date
             }
 
-            IQueryable<Game> model2 = readOnlyGameService.GetTable(null);
+            Func<IQueryable<Game>, IOrderedQueryable<Game>> sortOrderExpression = null;
+            if (!string.IsNullOrEmpty(sortedBy))
+            {
+                sortOrderExpression = sortedBy switch
+                {
+                    "Name" => l => l.OrderBy(s => s.g_name),
+                    "Genre" => l => l.OrderBy(s => s.g_genre),
+                    "ReleaseDate" => l => l.OrderBy(s => s.g_releaseDate),
+                    "NameDesc" => l => l.OrderByDescending(s => s.g_name),
+                    "GenreDesc" => l => l.OrderByDescending(s => s.g_genre),
+                    _ => l => l.OrderByDescending(s => s.g_releaseDate)
+                };
+            }
             
-            PagenatedList<Game> model = await PagenatedList<Game>.CreateAsync(model2, pageIndex, 10);
+            IQueryable<Game> result = gamesService.GetTable(filterPredicate, sortOrderExpression);
+            result = result.Include(t => t.players_play_games);
+
+            PaginatedList<Game> model = await PaginatedList<Game>.CreateAsync(result, pageIndex, 5);
             
             return View(model);
         }
