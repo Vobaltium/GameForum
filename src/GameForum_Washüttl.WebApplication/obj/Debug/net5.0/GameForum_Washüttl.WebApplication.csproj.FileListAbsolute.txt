@@ -235,3 +235,6 @@ C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\ob
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
 C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.genruntimeconfig.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\DeleteGame.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteAnswer.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteRequest.cshtml.g.cs

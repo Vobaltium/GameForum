@@ -54,6 +54,8 @@ namespace GameForum_Washüttl.WebApplication
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

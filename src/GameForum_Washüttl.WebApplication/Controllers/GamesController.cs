@@ -74,6 +74,19 @@ namespace GameForum_Washüttl.WebApplication.Controllers
 
         public async Task<IActionResult> DeleteGame(string id)
         {
+            if (!string.IsNullOrEmpty(id))
+            {
+                var erg = await gamesService.GetAllAsyncWithSearch(id);
+                return View(erg.FirstOrDefault());
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ProcessGameDeletion(string id)
+        {
             if(id != null)
                 await gamesService.DeleteGame(id);
 

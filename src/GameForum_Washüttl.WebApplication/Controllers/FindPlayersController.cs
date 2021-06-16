@@ -121,8 +121,21 @@ namespace GameForum_Washüttl.WebApplication.Controllers
         public async Task<IActionResult> DeleteAnswer(string id)
         {
             if (id != null)
-                await findPlayersService.DeleteAnswer(id);
+            {
+                string[] param = id.Split("#");
+                var input = await DBContext.Answers.FindAsync(param[1], param[0], param[2]);
+                return View(input);
+            }
 
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ProcessAnswerDeletion(string id)
+        {
+            if (id != null)
+                await findPlayersService.DeleteAnswer(id);
+            
             return RedirectToAction(nameof(Index));
         }
 
@@ -200,13 +213,26 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             }
             return View(input);
         }
-
+        
         public async Task<IActionResult> DeleteRequest(string id)
+        {
+            if (!string.IsNullOrEmpty(id))
+            {
+                string[] param = id.Split("#");
+                var input = await DBContext.PlayersPlayGames.FirstOrDefaultAsync(m => m.pg_p_name == param[0] && m.pg_g_name == param[1]);
+                return View(input);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+        
+        public async Task<IActionResult> ProcessRequestDeletion(string id)
         {
             if (id != null)
                 await findPlayersService.DeleteRequest(id);
 
             return RedirectToAction(nameof(Index));
         }
+        
     }
 }

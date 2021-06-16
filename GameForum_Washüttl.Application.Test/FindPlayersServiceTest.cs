@@ -140,7 +140,5 @@ namespace GameForum_Washüttl.Application.Test
             // Assert
             Assert.Equal(1, count);
         }
-        
-        
     }
 }

@@ -3,31 +3,37 @@
 @{
     ViewData["Title"] = "Add a request";
 }
-<h1>@ViewData["Title"]</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <p>Write him/her what and how you want to play.</p>
-        <form asp-action="AddRequest">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="pg_g_name" class="control-label">Game Name:</label>
-                <select asp-for="pg_g_name" class="form-control" asp-items="ViewBag.PgGName"></select>
+<form asp-action="AddRequest" method="post">
+    <div class="flex h-screen bg-gray-200 items-center justify-center">
+        <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12 lg:w-1/2">
+            <div class="py-4"/>
+
+            <div class="flex justify-center">
+                <div class="flex">
+                    <h1 class="text-gray-600 font-bold md:text-2xl text-xl">Add a request</h1>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="pg_p_name" class="control-label">Player Name:</label>
-                <input asp-for="pg_p_name" class="form-control" />
-                <span asp-validation-for="pg_p_name" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Game Name</label>
+                <select asp-for="pg_g_name" asp-items="ViewBag.PgGName" class="py-2 px-2 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="pg_message" class="control-label">Message:</label>
-                <input asp-for="pg_message" class="form-control" />
-                <span asp-validation-for="pg_message" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Player Name</label>
+                <input asp-for="pg_p_name" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="text" placeholder="Player Name" required/>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Message</label>
+                <input asp-for="pg_message" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="text" placeholder="Message" required/>
             </div>
-        </form>
-        <a asp-action="Index">Back to the requests.</a>
+
+            <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
+                <a class='w-auto bg-red-500 hover:bg-red-700 rounded-lg shadow-xl font-medium text-white px-4 py-2' asp-action="Index">Cancel</a>
+                <button class='w-auto rounded-lg shadow-xl font-medium text-white px-4 py-2 turquoiseButton' type="submit">Create</button>
+            </div>
+        </div>
     </div>
-</div>
+</form>
