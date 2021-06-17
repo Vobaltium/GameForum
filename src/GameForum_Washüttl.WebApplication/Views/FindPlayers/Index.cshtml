@@ -8,7 +8,7 @@
 
 <div class="overflow-x-auto">
     <div class="min-w-screen min-h-screen bg-gray-100 flex items-top justify-center bg-gray-100 font-sans overflow-hidden">
-        <div class="w-full lg:w-5/6">
+        <div class="w-full lg:w-5/6 py-3">
             <div class="bg-white shadow-md rounded my-6">
                 <div class="bg-gray-100">
                     <h1 class="mx-2 mb-3 text-4xl">Find players</h1>
@@ -17,14 +17,14 @@
                         <input class="mx-2 py-2 px-3 rounded-lg border-2 mt-1 focus:outline-none focus:ring-2 focus:border-transparent turquoiseBorder" type="text" placeholder="Search for something..." name="filter" maxlength="40"/>
                         <input class="text-white font-bold p-2 rounded w-20 mb-3 turquoiseButton" type="submit" value="Search"/>
                     </form>
-                    <a class="mx-2 text-white font-bold p-2 rounded w-80 mb-3 turquoiseButton" asp-action="AddRequest">Add request</a>
+                    <a class="mx-2 text-white font-bold p-2 rounded w-80 mb-3 turquoiseButton noUnderline" asp-action="AddRequest">Add request</a>
                 </div>
                 <div class="bg-gray-100"><br/></div>
                 <table class="min-w-max w-full table-auto">
                     <thead>
-                        <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
                             <th class="py-3 px-6 text-left">
-                                <a class="px-8 py-2 text-md font-medium text-white transition-colors duration-300 transform rounded turquoiseButton" asp-route-pageIndex="@(Model.PageIndex)" asp-route-filter="@ViewData["CurrentFilter"]" asp-route-sortedBy="@ViewData["PlayerNameSortParam"]" asp-action="Index">Player</a>
+                                <a class="px-8 py-2 text-md font-medium text-white transition-colors duration-300 transform rounded turquoiseButton noUnderline" asp-route-pageIndex="@(Model.PageIndex)" asp-route-filter="@ViewData["CurrentFilter"]" asp-route-sortedBy="@ViewData["PlayerNameSortParam"]" asp-action="Index">Player</a>
                             </th>
                             <th class="py-3 px-6 text-left">Message</th>
                             <th class="py-3 px-6 text-left">Actions</th>
@@ -70,10 +70,10 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <a class="mx-2 text-white font-bold p-2 rounded w-80 mb-3 turquoiseButton" asp-action="AddAnswer" asp-route-id="@game.pg_p_name#@game.pg_g_name">Add answer</a>
+                                        <a class="mx-2 text-white font-bold p-2 rounded w-80 mb-3 turquoiseButton noUnderline" asp-action="AddAnswer" asp-route-id="@game.pg_p_name#@game.pg_g_name">Add answer</a>
                                     </td>
                                 </tr>
-                                @if (player.answers_receiver.Count > 0)
+                                @if (player.answers_receiver.Where(o => o.a_g_game == game.pg_g_name).Count() > 0)
                                 {
                                     <tr class="border-b border-gray-200 hover:bg-gray-100">
                                         <th/>

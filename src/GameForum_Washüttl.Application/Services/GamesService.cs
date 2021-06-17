@@ -51,11 +51,11 @@ namespace GameForum_Washüttl.Application.Services
         public async Task DeleteGame(string id)
         {
             Game input = await DBContext.Games.FindAsync(id);
-
+            
             if(input != null)
             {
                 try
-                {
+                { 
                     DBContext.Games.Remove(input);
                     await DBContext.SaveChangesAsync();
                 }

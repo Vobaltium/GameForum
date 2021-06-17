@@ -1,16 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<link href="https://unpkg.com/tailwindcss/dist/tailwind.css" rel="stylesheet">
-<link href="https://tailwindcss-forms.vercel.app/dist/forms.min.css" rel="stylesheet">
 
-<header class="bg-blue-400"/>
+<header style="background-color: paleturquoise"/>
 <section class="flex items-center justify-center" style="height: 500px;">
     <div class="text-center">
-        <p class="text-xl font-medium tracking-wider text-gray-300">Here you can find people to play!</p>
-        <h2 class="mt-6 text-3xl font-bold text-white md:text-5xl">Welcome to the GameForum<br></h2>
+        <p class="text-xl font-medium tracking-wider text-gray-600">Here you can find people to play!</p>
+        <h2 class="mt-6 text-3xl font-bold text-dark md:text-5xl">Welcome to the GameForum<br></h2>
         <div class="flex justify-center mt-8">
-            <a class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform rounded turquoiseButton" asp-controller="FindPlayers" asp-action="Index">Get started and find some players!</a>
+            <a class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform rounded turquoiseButton nav-link" asp-controller="FindPlayers" asp-action="Index">Get started and find some players!</a>
         </div>
     </div>
 </section>

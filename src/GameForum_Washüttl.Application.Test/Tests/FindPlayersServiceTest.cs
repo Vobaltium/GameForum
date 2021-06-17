@@ -48,7 +48,6 @@ namespace GameForum_Washüttl.Application.Test.Tests
             FindPlayersService findPlayersService = new FindPlayersService(context);
             PlayersPlayGames playersPlayGames = context.PlayersPlayGames.ToList()[0];
             int count = context.PlayersPlayGames.Count();
-
             // Act
             await findPlayersService.DeleteRequest(playersPlayGames.pg_p_name+"#"+playersPlayGames.pg_g_name);
 

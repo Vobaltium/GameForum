@@ -37,7 +37,8 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             {
                 filterPredicate = t => t.p_name.ToLower().Contains(filter.ToLower())
                                        || t.players_play_games.Any(o => o.pg_message.ToLower().Contains(filter.ToLower()))
-                                       || t.players_play_games.All(o => o.pg_g_name.ToLower().Contains(filter.ToLower()));
+                                       || t.players_play_games.Any(o => o.pg_g_name.ToLower().Contains(filter.ToLower()))
+                                       || t.answers_receiver.Any(o => o.a_p_sender.ToLower().Contains(filter.ToLower()) || o.a_message.ToLower().Contains(filter.ToLower()));
             }
 
             Func<IQueryable<Player>, IOrderedQueryable<Player>> sortOrderExpression = null;
