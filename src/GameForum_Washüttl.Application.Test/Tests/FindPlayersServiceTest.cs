@@ -6,6 +6,7 @@ using Xunit;
 
 namespace GameForum_Washüttl.Application.Test.Tests
 {
+    [Collection("ServiceTests")]
     public class FindPlayersServiceTest
     {
         [Fact()]

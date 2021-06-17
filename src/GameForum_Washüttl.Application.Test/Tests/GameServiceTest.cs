@@ -7,6 +7,7 @@ using GameForum_Washüttl.Application.Services;
 
 namespace GameForum_Washüttl.Application.Test.Tests
 {
+    [Collection("ServiceTests")]
     public class GameServiceTest
     {
         [Fact()]
