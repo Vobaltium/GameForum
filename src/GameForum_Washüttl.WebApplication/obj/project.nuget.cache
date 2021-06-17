@@ -1,17 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "AmnoK0noJrQ5AWzKENdBPWfU/pTc2RrLJPCSpO4UZvvhIqaEAYTVm8SiJHXYXlvDQ94c2RIS8cFBVg3JyGm14Q==",
+  "dgSpecHash": "QcAbsP3DaYMHz4XsmtqOXUKHuOvgam3Q55GRVNwEBjeWp2vYAQ6hbvY+sbZKyyWj3KFMMkLrX6hyMR8PHyP3NA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mcgam\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.1\\microsoft.data.sqlite.core.5.0.1.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.1\\microsoft.entityframeworkcore.analyzers.5.0.1.nupkg.sha512",
-    "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.1\\microsoft.entityframeworkcore.design.5.0.1.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.1\\microsoft.entityframeworkcore.relational.5.0.1.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.1\\microsoft.entityframeworkcore.sqlite.5.0.1.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.1\\microsoft.entityframeworkcore.sqlite.core.5.0.1.nupkg.sha512",

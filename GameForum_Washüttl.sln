@@ -10,9 +10,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameForum_Washüttl.WebAppl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.DomainModel", "src\GameForum_Washüttl.DomainModel\GameForum_Washüttl.DomainModel.csproj", "{2FB13F9F-2CEA-43F5-AA2A-4E0A99E31FEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.Application", "GameForum_Washüttl.Application\GameForum_Washüttl.Application.csproj", "{F043732F-3CE0-4ED5-A185-12D9E97D3A14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.Application", "src\GameForum_Washüttl.Application\GameForum_Washüttl.Application.csproj", "{753BF3A3-75D8-42EA-B908-135328F7C1C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.Application.Test", "GameForum_Washüttl.Application.Test\GameForum_Washüttl.Application.Test.csproj", "{6A08979B-9A96-42B7-BA99-417BF39FAC07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForum_Washüttl.Application.Test", "src\GameForum_Washüttl.Application.Test\GameForum_Washüttl.Application.Test.csproj", "{4A8E88DE-5200-4EF1-BDF8-1F73D2D3C1AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,14 +28,14 @@ Global
 		{2FB13F9F-2CEA-43F5-AA2A-4E0A99E31FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FB13F9F-2CEA-43F5-AA2A-4E0A99E31FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FB13F9F-2CEA-43F5-AA2A-4E0A99E31FEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F043732F-3CE0-4ED5-A185-12D9E97D3A14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A08979B-9A96-42B7-BA99-417BF39FAC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753BF3A3-75D8-42EA-B908-135328F7C1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753BF3A3-75D8-42EA-B908-135328F7C1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753BF3A3-75D8-42EA-B908-135328F7C1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753BF3A3-75D8-42EA-B908-135328F7C1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8E88DE-5200-4EF1-BDF8-1F73D2D3C1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8E88DE-5200-4EF1-BDF8-1F73D2D3C1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8E88DE-5200-4EF1-BDF8-1F73D2D3C1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8E88DE-5200-4EF1-BDF8-1F73D2D3C1AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
