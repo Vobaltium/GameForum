@@ -360,7 +360,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "GameForum_Washüttl.DomainModel": "1.0.0"
+          "GameForum_Washüttl.DomainModel": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "compile": {
           "bin/placeholder/GameForum_Washüttl.Application.dll": {}
@@ -971,23 +972,24 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "GameForum_Washüttl.Application >= 1.0.0",
-      "GameForum_Washüttl.DomainModel >= 1.0.0"
+      "GameForum_Washüttl.DomainModel >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mcgam\\.nuget\\packages\\": {}
+    "C:\\Users\\Megaport\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
       "projectName": "GameForum_Washüttl.WebApplication",
-      "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
-      "packagesPath": "C:\\Users\\mcgam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\obj\\",
+      "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
+      "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mcgam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1001,14 +1003,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
-              "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj"
+            "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
+              "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj"
             },
-            "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
-              "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj"
-            },
-            "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
-              "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
+            "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
+              "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
             }
           }
         }
@@ -1022,6 +1021,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -1040,7 +1045,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

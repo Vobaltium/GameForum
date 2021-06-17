@@ -34,9 +34,8 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             Expression<Func<Game, bool>> filterPredicate = null;
             if (!string.IsNullOrEmpty(filter))
             {
-                filterPredicate = t => t.g_name.Contains(filter)
-                                       || t.g_genre.Contains(filter);
-                // Release Date
+                filterPredicate = t => t.g_name.ToLower().Contains(filter.ToLower())
+                                       || t.g_genre.ToLower().Contains(filter.ToLower());
             }
 
             Func<IQueryable<Game>, IOrderedQueryable<Game>> sortOrderExpression = null;
@@ -55,7 +54,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             
             IQueryable<Game> result = gamesService.GetTable(filterPredicate, sortOrderExpression);
             result = result.Include(t => t.players_play_games);
-
+            
             PaginatedList<Game> model = await PaginatedList<Game>.CreateAsync(result, pageIndex, 5);
             
             return View(model);

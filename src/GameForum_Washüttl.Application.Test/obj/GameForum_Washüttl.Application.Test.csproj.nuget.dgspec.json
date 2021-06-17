@@ -1,82 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj": {}
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj",
-        "projectName": "GameForum_Washüttl.Application",
-        "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj",
-        "packagesPath": "C:\\Users\\mcgam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\mcgam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj",
         "projectName": "GameForum_Washüttl.Application.Test",
-        "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj",
-        "packagesPath": "C:\\Users\\mcgam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\obj\\",
+        "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\GameForum_Washüttl.Application.Test.csproj",
+        "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mcgam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
+              "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
+                "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
               },
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj"
+              "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj": {
+                "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj"
               }
             }
           }
@@ -112,6 +50,10 @@
             "Bogus": {
               "target": "Package",
               "version": "[33.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -152,21 +94,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj",
         "projectName": "GameForum_Washüttl.Application",
-        "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj",
-        "packagesPath": "C:\\Users\\mcgam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\obj\\",
+        "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj",
+        "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mcgam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -180,8 +122,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
+              "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
+                "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
               }
             }
           }
@@ -195,6 +137,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -210,21 +158,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
+        "projectUniqueName": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
         "projectName": "GameForum_Washüttl.DomainModel",
-        "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
-        "packagesPath": "C:\\Users\\mcgam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\obj\\",
+        "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
+        "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mcgam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -280,21 +228,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj": {
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
         "projectName": "GameForum_Washüttl.WebApplication",
-        "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
-        "packagesPath": "C:\\Users\\mcgam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\obj\\",
+        "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\GameForum_Washüttl.WebApplication.csproj",
+        "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.WebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mcgam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -308,14 +256,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj"
+              "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
+                "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj"
               },
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.Application\\GameForum_Washüttl.Application.csproj"
-              },
-              "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
-                "projectPath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
+              "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
+                "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj"
               }
             }
           }
@@ -329,6 +274,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -347,7 +298,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
