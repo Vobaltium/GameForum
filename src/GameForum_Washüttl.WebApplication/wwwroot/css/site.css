@@ -85,14 +85,6 @@ body {
   background-color: mediumturquoise;
 }
 
-.turquoiseBorder {
-  border: 2px solid mediumturquoise;
-}
-
-.turquoiseBorder:focus {
-  border: 2px solid darkturquoise;
-}
-
 .noUnderline {
   text-decoration: none;
 }

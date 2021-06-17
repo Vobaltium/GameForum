@@ -2011,7 +2011,7 @@
       },
       "GameForum_Washüttl.DomainModel/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.1"

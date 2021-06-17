@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fxRnsoxnMj/vX8vIPEWxOSGia9vR330g+LVjEMQcuwQiUvA5B5dTmdzYK6R/75rmIl5BvQnG7XwIxuHxWwyKcw==",
+  "dgSpecHash": "RVfsqExBrZG4yaY0s00Cd+UbytBoi5Kk4rOAIlrRoJz615BcK1+wtEzO63JUtDhoBss9fOblnXlpGD1rPemyTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mcgam\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
   "expectedPackageFiles": [
@@ -32,10 +32,7 @@
     "C:\\Users\\mcgam\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\mcgam\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
-    "C:\\Users\\mcgam\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\mcgam\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
-    "C:\\Users\\mcgam\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\mcgam\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\mcgam\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }
