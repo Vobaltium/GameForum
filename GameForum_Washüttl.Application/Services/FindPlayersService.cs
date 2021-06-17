@@ -24,7 +24,7 @@ namespace GameForum_Washüttl.Application.Services
             if (!DBContext.Players.Any(o => o.p_name == input.a_p_sender))
                 DBContext.Players.Add(new Player() { p_name = input.a_p_sender });
             try
-            {
+            { 
                 DBContext.Answers.Add(input);
                 await DBContext.SaveChangesAsync();
             }

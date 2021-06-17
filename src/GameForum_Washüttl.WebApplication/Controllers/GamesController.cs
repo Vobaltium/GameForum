@@ -24,7 +24,6 @@ namespace GameForum_Washüttl.WebApplication.Controllers
 
         public async Task<IActionResult> Index(string filter, string currentFilter, string sortedBy, int pageIndex = 1)
         {
-            IEnumerable<Game> context;
             ViewData["CurrentFilter"] = currentFilter ?? filter;
             ViewData["CurrentSort"] = sortedBy;
             
@@ -64,7 +63,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
 
         public async Task<IActionResult> Create([Bind("g_name,g_genre,g_multiplayer,ReleaseDate,g_imageLink")] Game input)
         {
-            if (ModelState.IsValid && await DBContext.Games.FindAsync(input.g_name) == null)
+            if (ModelState.IsValid && await DBContext.Games.FindAsync(input.g_name) == null && DateTime.Compare(input.ReleaseDate, DateTime.Now) <= 0)
             {
                 await gamesService.AddGame(input);
                 return RedirectToAction(nameof(Index));
@@ -111,10 +110,17 @@ namespace GameForum_Washüttl.WebApplication.Controllers
         {
             if (id != null)
             {
+                if (DateTime.Compare(input.ReleaseDate, DateTime.Now) > 0)
+                {
+                    input.g_name = id;
+                    return View(input);
+                }
+
                 try
                 {
                     input.g_name = id;
                     await gamesService.UpdateGame(input);
+                    
                 }
                 catch(Exception)
                 {

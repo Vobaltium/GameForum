@@ -78,7 +78,7 @@ namespace GameForum_Washüttl.Application.Services
         public async Task UpdateGame(Game input)
         {
             var toChange = await DBContext.Games.FindAsync(input.g_name);
-
+            
             if (toChange != null)
             {
                 try

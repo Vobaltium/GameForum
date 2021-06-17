@@ -140,5 +140,20 @@ namespace GameForum_Washüttl.Application.Test
             // Assert
             Assert.Equal(1, count);
         }
+
+        [Fact()]
+        public void GetTableTest()
+        {
+            // Arrange
+            GameForumDBContext context = TestSeed.Seed();
+            FindPlayersService findPlayersService = new FindPlayersService(context);
+
+            // Act
+            int count = findPlayersService.GetTable().Count();
+            int countActual = context.Players.Count();
+            
+            // Assert
+            Assert.Equal(countActual, count);
+        }
     }
 }

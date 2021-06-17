@@ -21,7 +21,7 @@ namespace GameForum_Washüttl.DomainModel.Models
         [Key]
         public string a_g_game { get; set; }
 
-        [StringLength(30)]
+        [StringLength(60)]
         [Required]
         public string a_message { get; set; }
 

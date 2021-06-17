@@ -17,7 +17,7 @@ namespace GameForum_Washüttl.DomainModel.Models
         public string pg_p_name { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(60)]
         public string pg_message { get; set; }
 
         public virtual Game game_object { get; set; }

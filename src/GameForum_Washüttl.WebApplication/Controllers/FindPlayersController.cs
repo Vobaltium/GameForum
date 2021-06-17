@@ -35,9 +35,9 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             Expression<Func<Player, bool>> filterPredicate = null;
             if (!string.IsNullOrEmpty(filter))
             {
-                filterPredicate = t => t.p_name.Contains(filter)
-                                       || t.players_play_games.Any(o => o.pg_message.Contains(filter));
-                // Other filters
+                filterPredicate = t => t.p_name.ToLower().Contains(filter.ToLower())
+                                       || t.players_play_games.Any(o => o.pg_message.ToLower().Contains(filter.ToLower()))
+                                       || t.players_play_games.All(o => o.pg_g_name.ToLower().Contains(filter.ToLower()));
             }
 
             Func<IQueryable<Player>, IOrderedQueryable<Player>> sortOrderExpression = null;
@@ -46,7 +46,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
                 sortOrderExpression = sortedBy switch
                 {
                     "Name" => l => l.OrderBy(s => s.p_name),
-                    "NameDesc" => l => l.OrderByDescending(s => s.p_name)
+                    _ => l => l.OrderByDescending(s => s.p_name)
                 };
             }
             
@@ -54,8 +54,9 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             result = result
                 .Include(t => t.answers_receiver)
                 .Include(t => t.answers_sender)
-                .Include(t => t.players_play_games);
-
+                .Include(t => t.players_play_games)
+                .Where(o => o.players_play_games.Count() > 0);
+            
             PaginatedList<Player> model = await PaginatedList<Player>.CreateAsync(result, pageIndex, 5);
             
             return View(model);
@@ -68,7 +69,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
                 string[] param = id.Split("#");
                 Answer input = new Answer() { a_p_receiver = param[0], a_g_game = param[1] };
 
-                if (input != null)
+                if (!string.IsNullOrEmpty(input.a_p_receiver) && !string.IsNullOrEmpty(input.a_g_game))
                     return View(input);
             }
             catch(Exception)
@@ -143,21 +144,22 @@ namespace GameForum_Washüttl.WebApplication.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddAnswer(string id, [Bind("a_message,a_p_sender")] Answer input)
         {
-            if (input.a_p_sender != null)
+            try
             {
-                try
+                string[] param = id.Split("#");
+                input.a_p_receiver = param[0];
+                input.a_g_game = param[1];
+                
+                if (!string.IsNullOrEmpty(input.a_p_sender) && input.a_p_sender != input.a_p_receiver)
                 {
-                    string[] param = id.Split("#");
-                    input.a_p_receiver = param[0];
-                    input.a_g_game = param[1];
-
                     await findPlayersService.AddAnswer(input);
                     return RedirectToAction(nameof(Index));
                 }
-                catch(Exception)
-                {
-                    return View(input);
-                }
+                return View(input);
+            }
+            catch(Exception)
+            {
+                return View(input);
             }
             return View(input);
         }

@@ -83,5 +83,20 @@ namespace GameForum_Washüttl.Application.Test
             // Assert
             Assert.Equal(1, count);
         }
+
+        [Fact]
+        public void GetTableTest()
+        {
+            // Arrange
+            GameForumDBContext context = TestSeed.Seed();
+            GamesService gamesService = new GamesService(context);
+
+            // Act
+            int count = gamesService.GetTable().Count();
+            int countActual = context.Games.Count();
+            
+            // Assert
+            Assert.Equal(countActual, count);
+        }
     }
 }
