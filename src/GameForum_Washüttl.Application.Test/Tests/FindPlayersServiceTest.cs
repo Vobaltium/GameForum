@@ -6,6 +6,7 @@ using Xunit;
 
 namespace GameForum_Washüttl.Application.Test.Tests
 {
+    [Collection("ServiceTests")]
     public class FindPlayersServiceTest
     {
         [Fact()]
@@ -55,7 +56,7 @@ namespace GameForum_Washüttl.Application.Test.Tests
             Assert.Equal(count - 1, context.PlayersPlayGames.Count());
         }
         
-        [Fact()]
+        [Fact]
         public async Task DeleteAnswerTest()
         {
             // Arrange
