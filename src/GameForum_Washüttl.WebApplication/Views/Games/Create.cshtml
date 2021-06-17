@@ -3,42 +3,48 @@
 @{
     ViewData["Title"] = "Add a game";
 }
-<h1>@ViewData["Title"]</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <p>Add a game.</p>
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="g_name" class="control-label">Game Name:</label>
-                <input asp-for="g_name" class="form-control" />
-                <span asp-validation-for="g_name" class="text-danger"></span>
+<form asp-action="Create" method="post">
+    <div class="flex h-screen bg-gray-200 items-center justify-center">
+        <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12 lg:w-1/2">
+            <div class="py-4"/>
+
+            <div class="flex justify-center">
+                <div class="flex">
+                    <h1 class="text-gray-600 font-bold md:text-2xl text-xl">Add a game</h1>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="g_genre" class="control-label">Genre:</label>
-                <input asp-for="g_genre" class="form-control" />
-                <span asp-validation-for="g_genre" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                <div class="grid grid-cols-1">
+                    <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Name</label>
+                    <input asp-for="g_name" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="text" placeholder="Name" required/>
+                </div>
+                <div class="grid grid-cols-1">
+                    <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Genre</label>
+                    <input asp-for="g_genre" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="text" placeholder="Genre" required/>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="g_multiplayer" class="control-label">Multiplayer:</label>
-                <input asp-for="g_multiplayer" class="form-control" />
-                <span asp-validation-for="g_multiplayer" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Multiplayer</label>
+                <input asp-for="g_multiplayer" type="checkbox" class="py-2 px-2 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" />
             </div>
-            <div class="form-group">
-                <label asp-for="ReleaseDate" class="control-label">Release Date:</label>
-                <input asp-for="ReleaseDate" class="form-control" type="date"/>
-                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Release Date</label>
+                <input asp-for="ReleaseDate" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="date" placeholder="Release Date" required/>
             </div>
-            <div class="form-group">
-                <label asp-for="g_imageLink" class="control-label">Image Link:</label>
-                <input asp-for="g_imageLink" class="form-control" />
-                <span asp-validation-for="g_imageLink" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Image Link</label>
+                <input asp-for="g_imageLink" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="text" placeholder="Image Link" required/>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
+                <a class='w-auto bg-red-500 hover:bg-red-700 rounded-lg shadow-xl font-medium text-white px-4 py-2 nav-link' asp-action="Index">Cancel</a>
+                <button class='w-auto rounded-lg shadow-xl font-medium text-white px-4 py-2 turquoiseButton' type="submit">Create</button>
             </div>
-        </form>
-        <a asp-action="Index">Back to the games.</a>
+        </div>
     </div>
-</div>
+</form>

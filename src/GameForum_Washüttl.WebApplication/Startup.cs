@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GameForum_Washüttl.DomainModel.Models;
 
 namespace GameForum_Washüttl.WebApplication
 {
@@ -31,6 +32,7 @@ namespace GameForum_Washüttl.WebApplication
 
             services.AddTransient<IFindPlayersService, FindPlayersService>();
             services.AddTransient<IGamesService, GamesService>();
+            //services.AddTransient<IReadOnlyService, ServiceBase();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +54,8 @@ namespace GameForum_Washüttl.WebApplication
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

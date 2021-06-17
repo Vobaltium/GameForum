@@ -77,3 +77,245 @@ C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\src\GameForum_
 C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddRequest.cshtml.g.cs
 C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditRequest.cshtml.g.cs
 C:\Users\Megaport\Desktop\Schule\4CHIF\POS-C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\EditGame.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\appsettings.json
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.exe
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.deps.json
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.runtimeconfig.json
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.runtimeconfig.dev.json
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.pdb
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.Application.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.DomainModel.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.Application.pdb
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.DomainModel.pdb
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csprojAssemblyReference.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.AssemblyInfoInputs.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.AssemblyInfo.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorAssemblyInfo.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorAssemblyInfo.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\staticwebassets\GameForum_Washüttl.WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\staticwebassets\GameForum_Washüttl.WebApplication.StaticWebAssets.xml
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\scopedcss\bundle\GameForum_Washüttl.WebApplication.styles.css
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.TagHelpers.input.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.TagHelpers.output.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorCoreGenerate.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddAnswer.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddRequest.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditAnswer.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditRequest.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\Index.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\Create.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\EditGame.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\Index.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.pdb
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.CopyComplete
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.genruntimeconfig.cache
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\DeleteGame.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteAnswer.cshtml.g.cs
+C:\Users\Megaport\Desktop\Schule Lokal\POS C#\GameForum_Washüttl\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteRequest.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.exe
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.Application.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.DomainModel.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.Application.pdb
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.DomainModel.pdb
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.AssemblyReference.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.AssemblyInfoInputs.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.AssemblyInfo.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorAssemblyInfo.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorAssemblyInfo.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\staticwebassets\GameForum_Washüttl.WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\staticwebassets\GameForum_Washüttl.WebApplication.StaticWebAssets.xml
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\scopedcss\bundle\GameForum_Washüttl.WebApplication.styles.css
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.TagHelpers.input.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.TagHelpers.output.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorCoreGenerate.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddAnswer.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddRequest.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteAnswer.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteRequest.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditAnswer.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditRequest.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\Index.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\Create.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\DeleteGame.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\EditGame.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\Index.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.pdb
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\appsettings.json
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.deps.json
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.runtimeconfig.json
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.runtimeconfig.dev.json
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.CopyComplete
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.genruntimeconfig.cache
+C:\Users\mcgam\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\appsettings.json
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.exe
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.deps.json
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.runtimeconfig.json
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.runtimeconfig.dev.json
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.Application.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.DomainModel.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.Application.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\bin\Debug\net5.0\GameForum_Washüttl.DomainModel.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csprojAssemblyReference.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.AssemblyInfoInputs.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.AssemblyInfo.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorAssemblyInfo.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorAssemblyInfo.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\staticwebassets\GameForum_Washüttl.WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\staticwebassets\GameForum_Washüttl.WebApplication.StaticWebAssets.xml
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\scopedcss\bundle\GameForum_Washüttl.WebApplication.styles.css
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.TagHelpers.input.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.TagHelpers.output.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorCoreGenerate.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddAnswer.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\AddRequest.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteAnswer.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\DeleteRequest.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditAnswer.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\EditRequest.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\FindPlayers\Index.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\Create.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\DeleteGame.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\EditGame.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Games\Index.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.Views.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.csproj.CopyComplete
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\ref\GameForum_Washüttl.WebApplication.dll
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.pdb
+C:\Users\Megaport\RiderProjects\GameForum\src\GameForum_Washüttl.WebApplication\obj\Debug\net5.0\GameForum_Washüttl.WebApplication.genruntimeconfig.cache

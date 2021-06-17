@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Megaport\\Desktop\\Schule Lokal\\POS C#\\GameForum_Washüttl\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {}
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Megaport\\Desktop\\Schule Lokal\\POS C#\\GameForum_Washüttl\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
+    "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Megaport\\Desktop\\Schule Lokal\\POS C#\\GameForum_Washüttl\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
+        "projectUniqueName": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
         "projectName": "GameForum_Washüttl.DomainModel",
-        "projectPath": "C:\\Users\\Megaport\\Desktop\\Schule Lokal\\POS C#\\GameForum_Washüttl\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
+        "projectPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\GameForum_Washüttl.DomainModel.csproj",
         "packagesPath": "C:\\Users\\Megaport\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Megaport\\Desktop\\Schule Lokal\\POS C#\\GameForum_Washüttl\\src\\GameForum_Washüttl.DomainModel\\obj\\",
+        "outputPath": "C:\\Users\\Megaport\\RiderProjects\\GameForum\\src\\GameForum_Washüttl.DomainModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Megaport\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

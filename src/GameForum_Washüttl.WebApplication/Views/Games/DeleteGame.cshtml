@@ -1,0 +1,29 @@
+@model GameForum_Washüttl.DomainModel.Models.Game
+
+@{
+    ViewData["Title"] = "Delete game "+Model.g_name;
+}
+
+<form asp-action="ProcessGameDeletion" method="post">
+    <div class="flex h-screen bg-gray-200 items-center justify-center">
+        <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12 lg:w-1/2">
+            <div class="py-4"/>
+
+            <div class="flex justify-center">
+                <div class="flex">
+                    <h1 class="text-gray-600 font-bold md:text-2xl text-xl">Delete game @Model.g_name</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <p class="md:text-sm text-xs text-gray-500 font-semibold">Are you sure you want to delete the game @Model.g_name?</p>
+            </div>
+
+            <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
+                <input type="hidden" value="@Model.g_name" name="Id"/>
+                <a class='w-auto bg-red-500 hover:bg-red-700 rounded-lg shadow-xl font-medium text-white px-4 py-2 nav-link' asp-action="Index">Cancel</a>
+                <button class='w-auto turquoiseButton rounded-lg shadow-xl font-medium text-white px-4 py-2' type="submit">Delete</button>
+            </div>
+        </div>
+    </div>
+</form>

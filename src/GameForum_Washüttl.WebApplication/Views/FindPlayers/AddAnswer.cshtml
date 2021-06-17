@@ -1,29 +1,34 @@
 ﻿@model GameForum_Washüttl.DomainModel.Models.Answer
 
 @{
-    ViewData["Title"] = "Write a message";
+    ViewData["Title"] = "Write an answer";
 }
-<h1>@ViewData["Title"]</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <p>Write him/her a message.</p>
-        <form asp-action="AddAnswer">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="a_p_sender" class="control-label">Player Name:</label>
-                <input asp-for="a_p_sender" class="form-control" />
-                <span asp-validation-for="a_p_sender" class="text-danger"></span>
+<form asp-action="AddAnswer" method="post">
+    <div class="flex h-screen bg-gray-200 items-center justify-center">
+        <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12 lg:w-1/2">
+            <div class="py-4"/>
+
+            <div class="flex justify-center">
+                <div class="flex">
+                    <h1 class="text-gray-600 font-bold md:text-2xl text-xl">Write him/her an answer.</h1>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="a_message" class="control-label">Message:</label>
-                <input asp-for="a_message" class="form-control" />
-                <span asp-validation-for="a_message" class="text-danger"></span>
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500  font-semibold">Player name</label>
+                <input asp-for="a_p_sender" type="text" placeholder="Player name" class="py-2 px-2 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" />
             </div>
-            <div class="form-group">
-                <input type="submit" value="Send" class="btn btn-primary" />
+
+            <div class="grid grid-cols-1 mt-5 mx-7">
+                <label class="uppercase md:text-sm text-xs text-gray-500 font-semibold">Message</label>
+                <input asp-for="a_message" class="py-2 px-3 rounded-lg border-2 border-blue-300 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" type="text" placeholder="Message" required/>
             </div>
-        </form>
-        <a asp-action="Index">Back to the requests.</a>
+
+            <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
+                <a class='w-auto bg-red-500 hover:bg-red-700 rounded-lg shadow-xl font-medium text-white px-4 py-2 nav-link' asp-action="Index">Cancel</a>
+                <button class='w-auto rounded-lg shadow-xl font-medium text-white px-4 py-2 turquoiseButton' type="submit">Create</button>
+            </div>
+        </div>
     </div>
-</div>
+</form>

@@ -2,11 +2,14 @@
 using GameForum_Washüttl.DomainModel.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using GameForum_Washüttl.Application.Services;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using GameForum_Washüttl.DomainModel.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 namespace GameForum_Washüttl.WebApplication.Controllers
 {
@@ -20,16 +23,44 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             this.DBContext = DBContext;
             this.findPlayersService = findPlayersService;
         }
-
-        public async Task<IActionResult> Index(string id)
+        
+        public async Task<IActionResult> Index(string filter, string currentFilter, string sortedBy, int pageIndex = 1)
         {
-            IEnumerable<Player> context = null;
-            if (!string.IsNullOrEmpty(id))
-                context = await findPlayersService.GetAllWithSearch(id);
-            else
-                context = await findPlayersService.GetAll();
+            IEnumerable<Player> context;
+            ViewData["CurrentFilter"] = currentFilter ?? filter;
+            ViewData["CurrentSort"] = sortedBy;
+            
+            ViewData["PlayerNameSortParam"] = sortedBy == "Name" ? "NameDesc" : "Name";
 
-            return View(context);
+            Expression<Func<Player, bool>> filterPredicate = null;
+            if (!string.IsNullOrEmpty(filter))
+            {
+                filterPredicate = t => t.p_name.ToLower().Contains(filter.ToLower())
+                                       || t.players_play_games.Any(o => o.pg_message.ToLower().Contains(filter.ToLower()))
+                                       || t.players_play_games.Any(o => o.pg_g_name.ToLower().Contains(filter.ToLower()))
+                                       || t.answers_receiver.Any(o => o.a_p_sender.ToLower().Contains(filter.ToLower()) || o.a_message.ToLower().Contains(filter.ToLower()));
+            }
+
+            Func<IQueryable<Player>, IOrderedQueryable<Player>> sortOrderExpression = null;
+            if (!string.IsNullOrEmpty(sortedBy))
+            {
+                sortOrderExpression = sortedBy switch
+                {
+                    "Name" => l => l.OrderBy(s => s.p_name),
+                    _ => l => l.OrderByDescending(s => s.p_name)
+                };
+            }
+            
+            IQueryable<Player> result = findPlayersService.GetTable(filterPredicate, sortOrderExpression);
+            result = result
+                .Include(t => t.answers_receiver)
+                .Include(t => t.answers_sender)
+                .Include(t => t.players_play_games)
+                .Where(o => o.players_play_games.Count() > 0);
+            
+            PaginatedList<Player> model = await PaginatedList<Player>.CreateAsync(result, pageIndex, 5);
+            
+            return View(model);
         }
 
         public IActionResult AddAnswer(string id)
@@ -39,7 +70,7 @@ namespace GameForum_Washüttl.WebApplication.Controllers
                 string[] param = id.Split("#");
                 Answer input = new Answer() { a_p_receiver = param[0], a_g_game = param[1] };
 
-                if (input != null)
+                if (!string.IsNullOrEmpty(input.a_p_receiver) && !string.IsNullOrEmpty(input.a_g_game))
                     return View(input);
             }
             catch(Exception)
@@ -92,8 +123,21 @@ namespace GameForum_Washüttl.WebApplication.Controllers
         public async Task<IActionResult> DeleteAnswer(string id)
         {
             if (id != null)
-                await findPlayersService.DeleteAnswer(id);
+            {
+                string[] param = id.Split("#");
+                var input = await DBContext.Answers.FindAsync(param[1], param[0], param[2]);
+                return View(input);
+            }
 
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ProcessAnswerDeletion(string id)
+        {
+            if (id != null)
+                await findPlayersService.DeleteAnswer(id);
+            
             return RedirectToAction(nameof(Index));
         }
 
@@ -101,21 +145,22 @@ namespace GameForum_Washüttl.WebApplication.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddAnswer(string id, [Bind("a_message,a_p_sender")] Answer input)
         {
-            if (input.a_p_sender != null)
+            try
             {
-                try
+                string[] param = id.Split("#");
+                input.a_p_receiver = param[0];
+                input.a_g_game = param[1];
+                
+                if (!string.IsNullOrEmpty(input.a_p_sender) && input.a_p_sender != input.a_p_receiver)
                 {
-                    string[] param = id.Split("#");
-                    input.a_p_receiver = param[0];
-                    input.a_g_game = param[1];
-
                     await findPlayersService.AddAnswer(input);
                     return RedirectToAction(nameof(Index));
                 }
-                catch(Exception)
-                {
-                    return View(input);
-                }
+                return View(input);
+            }
+            catch(Exception)
+            {
+                return View(input);
             }
             return View(input);
         }
@@ -171,13 +216,26 @@ namespace GameForum_Washüttl.WebApplication.Controllers
             }
             return View(input);
         }
-
+        
         public async Task<IActionResult> DeleteRequest(string id)
+        {
+            if (!string.IsNullOrEmpty(id))
+            {
+                string[] param = id.Split("#");
+                var input = await DBContext.PlayersPlayGames.FirstOrDefaultAsync(m => m.pg_p_name == param[0] && m.pg_g_name == param[1]);
+                return View(input);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+        
+        public async Task<IActionResult> ProcessRequestDeletion(string id)
         {
             if (id != null)
                 await findPlayersService.DeleteRequest(id);
 
             return RedirectToAction(nameof(Index));
         }
+        
     }
 }

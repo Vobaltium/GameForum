@@ -2,10 +2,22 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to the GameForum</h1>
-    <p>Here you can find people to play!</p>
+<header style="background-color: paleturquoise"/>
+<section class="flex items-center justify-center" style="height: 500px;">
+    <div class="text-center">
+        <p class="text-xl font-medium tracking-wider text-gray-600">Here you can find people to play!</p>
+        <h2 class="mt-6 text-3xl font-bold text-dark md:text-5xl">Welcome to the GameForum<br></h2>
+        <div class="flex justify-center mt-8">
+            <a class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform rounded turquoiseButton nav-link" asp-controller="FindPlayers" asp-action="Index">Get started and find some players!</a>
+        </div>
+    </div>
+</section>
 
-
-
-</div>
+<section class="bg-white">
+    <div class="max-w-5xl px-6 py-8 mx-auto">
+        <h2 class="text-3xl font-semibold text-gray-800">Welcome to the Home Page of the GameForum</h2>
+        <p class="max-w-lg mt-4 text-gray-600">Here you can find other players to play with online! You can choose a game and if your game is not supported yet, you can add it.</p>
+        <p class="py-5"/>
+        <p class="py-3"/>
+    </div>
+</section>

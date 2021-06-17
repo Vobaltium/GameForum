@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - GameForum</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/forms.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tailwind.css" asp-append-version="true" />
+    <link runat="server" rel="shortcut icon" href="https://www.logolynx.com/images/logolynx/e0/e070e48a956a5d8dd67d4a3696015358.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="https://www.logolynx.com/images/logolynx/e0/e070e48a956a5d8dd67d4a3696015358.png" type="image/ico"/>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: mediumturquoise">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow turquoise">
             <div class="container">
                 <img src="https://www.logolynx.com/images/logolynx/e0/e070e48a956a5d8dd67d4a3696015358.png" height="50" width="50" /> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GameForum</a>
@@ -19,16 +23,16 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <li class="nav-item turquoiseButton rounded">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item turquoiseButton rounded">
                             <a class="nav-link text-dark" asp-area="" asp-controller="FindPlayers" asp-action="Index">Find Players</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item turquoiseButton rounded">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Games" asp-action="Index">Games</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item turquoiseButton rounded">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -36,15 +40,12 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted" style="background-color: mediumturquoise">
-        <div class="container">
-            &copy; 2021 - GameForum - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <main class="flex-grow">
+        @RenderBody()
+    </main>
+    <footer class="border-t flex-grow" style="background-color: mediumturquoise">
+        <div class="container flex items-center justify-between px-6 py-8 mx-auto">
+            <p class="text-dark">© 2021 Johannes Washüttl</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
